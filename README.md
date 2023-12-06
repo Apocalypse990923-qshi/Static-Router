@@ -5,6 +5,7 @@ Writing a simple router configured under a static routing table and a static net
 
 Implemented the function sr_handlepacket(sr, packet, len, interface), which is called each time the router receives a packet on the interface and contains the complete logic of how the router should deal with an incoming packet. The high level design can be demonstrated in the flowchart shown below.
 ![Alt text](image.png)
+
 Here's a breakdown of what it does:
 * Handling ARP Packets:
   * When an ARP packet arrives, the router checks whether it's a request targeted at one of its interfaces. If it is, the router responds with an ARP reply. If it's an ARP reply to a previously sent request, the router processes the reply to determine which waiting packets can now be forwarded.
