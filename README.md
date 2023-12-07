@@ -4,7 +4,7 @@ Writing a simple router configured under a static routing table and a static net
 
 ![Alt text](image-1.png)
 
-Implemented the function sr_handlepacket(sr, packet, len, interface), which is called each time the router receives a packet on the interface and contains the complete logic of how the router should deal with an incoming packet. The high level design can be demonstrated in the flowchart shown below.
+Implemented the function `sr_handlepacket(sr, packet, len, interface)`, which is called each time the router receives a packet on the interface and contains the complete logic of how the router should deal with an incoming packet. The high level design can be demonstrated in the flowchart shown below.
 
 ![Alt text](image.png)
 
